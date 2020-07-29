@@ -1,0 +1,15 @@
+{
+    "Version": "2012-10-17",
+    "Statement":
+    [
+        {
+        "Effect": "Allow",
+        "Principal":
+            {
+            "AWS": "arn:aws:sts::<12-digit-number>:assumed-role/<external_function_role>/snowflake"
+            },
+        "Action": "execute-api:Invoke",
+        "Resource": "arn:aws:execute-api:us-west-2:123456789012:ljkfds890a/*/POST/MyResourceName"
+        }
+    ]
+}
